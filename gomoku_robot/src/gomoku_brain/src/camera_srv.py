@@ -2,7 +2,7 @@
 import rospy
 
 from sensor_msgs.msg import Image
-from gomoku_cv.srv import ImageSrv, ImageSrvResponse
+from gomoku_brain.srv import ImageSrv, ImageSrvResponse
 
 
 class ImgService:
