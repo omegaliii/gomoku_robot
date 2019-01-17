@@ -11,6 +11,10 @@ Run the command from the gomoku_robot directory.
 `source devel/setup.bash`
 
 ## 2. Enable gomoku_brain node
+First, change the permission of the following file under gomoku_brain/src:
+
+`chmod  a+x  camera_srv.py image_process.py`
+
 Ensure that a webcam is connected to your computer. Depending on which type you select, you may need to modify the parameters in the launch file. (The default is the Microsoft cameras.) Run this launch file using the command:
 
 `roslaunch gomoku_brain run_cam.launch`
